@@ -1,12 +1,13 @@
 "use client";
 
 import styles from "@/styles/page.module.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ArticlePreview from "@/components/ArticlePreview";
+import { useArticleContext } from "./contexts/ArticleContext";
 
 export default function Home() {
 
-  const [news, setNews] = useState([]);
+  const { news, setNews } = useArticleContext();
 
   const fetchData = async () => {
     const response = await fetch("/api/news")

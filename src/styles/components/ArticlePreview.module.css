@@ -1,0 +1,37 @@
+/*Zadanie 3: Poproawiamy style komponentu ArticlePreview
+//1. Wyświetlamy zdjęcvie o stałej wysokości 300px i dostosowujemy szerokość automatycznie
+//2. Dodajemy tytuł artykułu
+//3. Dodajemy opis artykułu
+//4. Dodajemy autora artykułu
+//5. Zamykamy komponent w boxie na szarym tle i z zaokrąglonymi rogami*/
+.container{
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    display: flex;
+    margin: 16px;
+}
+.leftBox{
+    padding: 1rem;
+    min-width: 40%;
+}
+.rightBox{
+    padding: 1rem;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.description{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.author{
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+.image{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
