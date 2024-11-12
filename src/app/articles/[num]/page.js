@@ -1,9 +1,12 @@
+"use client";
+
 import styles from "@/styles/page.module.css";
-import { useArticleContext } from "../../contexts/ArticleContext"
+import React from 'react';
+import { useArticleContext } from '../../../contexts/ArticleContext';
 
 export default function Articles({params}) {
 
-    const { num } = params;
+    const { num } = React.use(params);
     const { news } = useArticleContext();
 
     console.log(news[num]);
