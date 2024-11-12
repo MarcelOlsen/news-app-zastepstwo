@@ -12,7 +12,7 @@ export default function Home() {
     const response = await fetch("/api/news");
     const data = await response.json();
     setNews(data.articles);
-  }
+  };
 
   useEffect(() => {
     fetchData();

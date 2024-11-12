@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.articleContainer{
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    display: flex;
+    margin: 16px;
+    flex-direction: column;
+    width: 60vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    gap: 30px;
+}
+
+.image {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.articleDataContainer {
+    margin-left: 2vw;
+    margin-top: -1vw;
+}
+
+.publishText {
+    opacity: 75%;
+    font-size: small;
+    margin-top: 5px;
+}
+
+.contentContainer {
+    margin-left: 2vw;
+}
